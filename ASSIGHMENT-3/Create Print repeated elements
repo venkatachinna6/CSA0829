@@ -1,0 +1,6 @@
+arr = [1, 2, 2, 3, 4, 4]
+repeats = []
+for i in set(arr):
+    if arr.count(i) > 1:
+        repeats.append(i)
+print(repeats)
