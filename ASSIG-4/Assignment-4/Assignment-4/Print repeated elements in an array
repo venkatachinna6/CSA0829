@@ -1,0 +1,12 @@
+def repeated_elements(arr):
+    freq = {}
+    repeated = set()
+    for num in arr:
+        if num in freq:
+            repeated.add(num)
+        else:
+            freq[num] = 1
+    return list(repeated)
+
+# Example usage
+print(repeated_elements([1, 2, 2, 3, 4, 4, 5]))  # Output: [2, 4]
