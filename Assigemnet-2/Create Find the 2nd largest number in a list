@@ -1,0 +1,4 @@
+lst = [10, 20, 5, 8, 20]
+unique = list(set(lst))
+unique.sort()
+print("2nd largest number:", unique[-2])
