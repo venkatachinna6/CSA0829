@@ -1,0 +1,4 @@
+s1 = "what"
+s2 = "watch"
+matches = sum(1 for i in range(min(len(s1), len(s2))) if s1[i] == s2[i])
+print("Matching positions:", matches)
