@@ -1,0 +1,3 @@
+arr = [16, -18, 27, -16, 23, -21, 19]
+negatives = [x for x in arr if x < 0]
+print("Number of negative numbers:", len(negatives))
