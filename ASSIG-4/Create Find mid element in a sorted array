@@ -1,0 +1,10 @@
+def mid_element(sorted_arr):
+    mid = len(sorted_arr) // 2
+    if len(sorted_arr) % 2 == 1:
+        return sorted_arr[mid]
+    else:
+        return (sorted_arr[mid-1] + sorted_arr[mid]) / 2
+
+# Example usage
+sorted_arr = [1, 2, 3, 4, 5]
+print(mid_element(sorted_arr))  # Output: 3
