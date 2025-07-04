@@ -1,0 +1,12 @@
+def find_rotation_index(nums):
+    low, high = 0, len(nums) - 1
+    while low < high:
+        mid = (low + high) // 2
+        if nums[mid] > nums[high]:
+            low = mid + 1
+        else:
+            high = mid
+    return low
+
+# Example usage
+print(find_rotation_index([7,0,1,4,4,5,6])) 
