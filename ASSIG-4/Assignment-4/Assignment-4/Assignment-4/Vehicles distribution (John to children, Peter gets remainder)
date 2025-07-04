@@ -1,0 +1,11 @@
+def peter_vehicles(m, n):
+    if n == 0:
+        x = m
+    else:
+        x = m % n
+    is_peter_lucky = (m % 2 == 0)
+    return x, is_peter_lucky
+
+# Example usage
+vehicles, lucky = peter_vehicles(10, 3)
+print(f"Peter gets: {vehicles}, Is Peter lucky? {lucky}")
